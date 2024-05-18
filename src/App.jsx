@@ -10,16 +10,17 @@ export const App = () => {
       <Container>
         <Tabs>
           <TabList>
-            <Tab>Todos</Tab>
             <Tab>Photos</Tab>
+            <Tab>Todos</Tab>            
           </TabList>
 
+           <TabPanel>
+            <Photos />
+          </TabPanel>
           <TabPanel>
             <Todos />
           </TabPanel>
-          <TabPanel>
-            <Photos />
-          </TabPanel>
+         
         </Tabs>
       </Container>
     </Section>
